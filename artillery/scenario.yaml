@@ -1,0 +1,9 @@
+config:
+  target: "ws://localhost:3000"
+  phases:
+    - duration: 20
+      arrivalRate: 10
+scenarios:
+  - engine: "ws"
+    flow:
+      - send: "hello"
